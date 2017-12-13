@@ -17,6 +17,7 @@ function changed(evt) {
                     blocksHTML += `<div class="block">\
                                 <span class="number">${elem.number}</span>\
                                 <span class="abbr">${elem.symbol}</span>\
+                                <span class="name">${elem.name}</span>\
                             </div>`;
                 });
                 document.querySelector('#elements').innerHTML = blocksHTML;
