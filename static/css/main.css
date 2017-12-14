@@ -62,9 +62,13 @@ body{
     display: flex;
     color: rgba(255, 255, 255, 0.5);
     margin-right: 10px;
+    margin-bottom: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     flex-direction: column;
 }
+.container .blocks .block:last-child{
+    margin-right: 0px;
+}   
 .container .blocks .block .number{
     padding: 5px;
     font-weight: bold;
