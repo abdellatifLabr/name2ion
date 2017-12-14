@@ -52,6 +52,7 @@ body{
 .container .blocks{
     display: flex;
     padding: 10px;
+    flex-wrap: wrap;
 }
 .container .blocks .block{
     border: 3px solid rgba(255, 255, 255, 0.5);
