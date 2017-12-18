@@ -18,13 +18,18 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
 	res.render('index');
 });
 
-app.post('/search', function(req, res) {
-    const text = req.param('text');
-    res.send(name2ion.getElements(text, elements));
+app.post('/search', (req, res) => {
+ 	const text = req.param('text');
+  res.send(name2ion.getElements(text, elements));
+});
+
+app.post('/info', (req, res) => {
+	const number = parseInt(req.param('number'));
+	res.send(name2ion.getInfo(number));
 });
 
 app.listen(port, function(){

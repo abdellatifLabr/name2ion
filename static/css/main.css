@@ -10,6 +10,11 @@ body{
     box-sizing: border-box;
 }
 
+a:link{color: #fff; text-decoration: none;}
+a:visited{color: #fff; text-decoration: none;}
+a:hover{color: #fff; text-decoration: underline;}
+a:active{color: #fff; text-decoration: none;}
+
 .header h1{
     width: 60%;
     margin: auto;
@@ -84,4 +89,25 @@ body{
     display: flex;
     justify-content: center;
     font-weight: bold;
+    cursor: pointer;
+}
+.container .blocks .block .name:hover{
+    color: #fff;
+}
+
+#infoBox{
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background: #1A237E;
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 20px; left: 10px; right: 10px;
+    margin: auto;
+    visibility: hidden;
+}
+#infoBox table tr td{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: top;
 }

@@ -7,6 +7,10 @@ db.defaults({ elements: [] }).write();
 
 const elements = db.get('elements').value();
 
+module.exports.getInfo = function(number) {
+    return db.get('elements').find({ number: number }).value();
+}
+
 module.exports.getElements = function(text, elements) {
     const combs = getCombs(text.length);
     let result = [];
