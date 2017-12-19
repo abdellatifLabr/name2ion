@@ -108,6 +108,8 @@ a:active{color: #fff; text-decoration: none;}
 #infoBox table tr td{
     padding: 5px;
     font-size: 14px;
-    font-weight: bold;
     vertical-align: top;
+}
+#infoBox table tr td:first-child{
+    font-weight: bold;
 }
